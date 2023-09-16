@@ -1,0 +1,128 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    margin: 0;
+    padding: 0;
+  }
+  .editor-container {
+    width: 40em;
+    margin: 2em auto;
+    background-color: #fff;
+    border: 0.06em solid #ccc;
+    border-radius: 0.3125em;
+    box-shadow: 0 0 0.15625em rgba(0, 0, 0, 0.1);
+  }
+  .editor-toolbar {
+    background-color: #f0f0f0;
+    padding: 0.625em;
+    border-bottom: 0.0625em solid #ccc;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 20em;
+    width: 50%;
+  }
+  .editor-toolbar button {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1em;
+    margin-right: 0.625em;
+    transition: background-color 0.3s ease-in-out;
+  }
+  .editor-toolbar button:hover {
+    color: #007bff;
+  }
+  .editor-toolbar button:active {
+    background-color: #f0f0f0;
+  }
+  .editor-content {
+    padding: 1.25em;
+  }
+  .editor-textarea {
+    width: 100%;
+    height: 15em;
+    border: 0.0625em solid #ccc;
+    border-radius: 0.3125em;
+    padding: 0.625em;
+    font-size: 0.875em;
+    outline: none;
+    font-size: 1em;
+  }
+  .editor-textarea:focus {
+    border-color: #007bff;
+  }
+  h1 {
+    text-align: left;
+    margin-left: 11em;
+  }
+
+  .download-icon {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 1em;
+    margin-right: 0.625em;
+}
+.download-icon:hover {
+    color: #0056b3;
+}
+
+.upper{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-right:20em ;
+}
+.input-content{
+  display: flex;
+}
+
+.input-name{
+  text-align: center;
+}
+#bold.active {
+  background-color: lightblue;
+}
+
+#italic.active{
+  background-color: lightblue;
+}
+#underline.active{
+  background-color: lightblue;
+}
+#line-through.active{
+  background-color: lightblue;
+}
+ 
+.bold{
+  font-weight: bold;
+}
+.italic{
+  font-style: italic;
+}
+.underline{
+  text-decoration: underline;
+}
+ 
+
+.strike{
+  text-decoration: line-through;  
+}
+
+ 
+#text-align-left.active{
+  background-color: lightblue;
+}
+
+.align-left{
+  text-align: left;
+}
+
+.align-right{
+  text-align: right;
+}
+
+.align-center{
+  text-align: center;
+}

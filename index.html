@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Text Editor</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="upper">
+      <h1>Text Editor</h1>
+      <a href="#" class="download-icon" onclick="downloadFile()"
+        ><i class="fas fa-download" onclick="downloadFile()"></i> Download
+        Text</a
+      >
+    </div>
+    <div class="editor-toolbar">
+      <button id="bold" type="button" onclick="makeBold()">B</button>
+      <button id="italic" type="button" onclick="makeItalic()"><i>I</i></button>
+      <button id="underline" type="button" onclick="makeUnderline()">
+        <u>U</u>
+      </button>
+      <button id="line-through" type="button">
+        <span style="text-decoration: line-through" onclick="makeStrike()"
+          >S</span
+        >
+      </button>
+      <i
+        class="fa-solid fa-align-left"
+        id="text-align-left"
+        onclick="leftAlign()"
+      ></i>
+      <i
+        class="fa-solid fa-align-center"
+        id="text-align-center"
+        onclick="centerAlign()"
+      ></i>
+      <i
+        class="fa-solid fa-align-right"
+        id="text-align-right"
+        onclick="rightAlign()"
+      ></i>
+    </div>
+    <div class="input-content">
+      <div class="editor-container">
+        <h3 class="input-name">Your text</h3>
+        <div class="editor-content">
+          <textarea
+            class="editor-textarea"
+            title="ne"
+            id="input-text"
+          ></textarea>
+        </div>
+      </div>
+
+      <div class="editor-container">
+        <h3 class="input-name">Formatted Text</h3>
+        <div class="editor-content">
+          <textarea
+            class="editor-textarea"
+            title="ne"
+            id="formatted-text"
+          ></textarea>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
