@@ -1,0 +1,49 @@
+@media screen and (max-width: 768px){
+    .input-content{
+        flex-direction: column;
+         
+    }
+    .editor-container{
+        width: 24em;
+        height: 70%;
+        /* margin: 0.4em 0 0 4em; */
+    }
+    .editor-content{
+        width: 85%;
+    }
+    .editor-toolbar{
+        margin: 0 auto;
+        width: 100%;
+    }
+    .upper{
+        margin-right: 0;
+    }
+    h1{
+        margin-left: 0;
+    }
+}
+
+@media screen and (min-width:2560px) {
+    .editor-container{
+        width: 200%;
+        height: 45em;
+    }
+    
+    .editor-textarea{
+        height: 38em;
+        width: 98em;
+    }
+    h3{
+        font-size: 2.5em;
+    }
+    .editor-toolbar{
+        width: 50%;
+        font-size: 2em;
+    }
+    h1{
+        font-size: 3em;
+    }
+    a{
+        width: 15em;
+    }
+}
